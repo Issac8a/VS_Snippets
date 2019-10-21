@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>getComponentInChildren_Unity</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>getcompchild</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>objectComponent</ID>
+          <ToolTip>objectComponent</ToolTip>
+          <Default>objectComponent</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>this</ID>
+          <ToolTip>this</ToolTip>
+          <Default>this</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>componentType</ID>
+          <ToolTip>componentType</ToolTip>
+          <Default>componentType</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$objectComponent$ = $this$.GetComponentInChildren<$componentType$>();
+$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

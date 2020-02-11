@@ -5,26 +5,21 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>debugW_Unity</Title>
+      <Title>e_GetPropertyHeight_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>debw</Shortcut>
+      <Shortcut>egetpropheight</Shortcut>
     </Header>
     <Snippet>
-      <Declarations>
-        <Literal Editable="true">
-          <ID>debugText</ID>
-          <ToolTip>debugText</ToolTip>
-          <Default>debugText</Default>
-          <Function>
-          </Function>
-        </Literal>
-      </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[Debug.LogWarning("$debugText$");$end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[    public override float GetPropertyHeight(SerializedProperty property,
+                                            GUIContent label)
+    {
+        return EditorGUI.GetPropertyHeight(property, label, true);
+    }]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

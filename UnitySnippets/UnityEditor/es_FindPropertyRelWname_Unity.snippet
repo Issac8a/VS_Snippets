@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>es_FindRelativeWithName_Unity</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>esfindrelwname</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>relativeProperty</ID>
+          <ToolTip>relativeProperty</ToolTip>
+          <Default>relativeProperty</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>serializedProperty</ID>
+          <ToolTip>serializedProperty</ToolTip>
+          <Default>serializedProperty</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>relativeField</ID>
+          <ToolTip>relativeField</ToolTip>
+          <Default>relativeField</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>field</ID>
+          <ToolTip>field</ToolTip>
+          <Default>field</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>scriptRef</ID>
+          <ToolTip>scriptRef</ToolTip>
+          <Default>scriptRef</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$relativeProperty$ = $serializedProperty$.FindPropertyRelative(nameof($scriptRef$.$field$.$relativeField$));
+$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

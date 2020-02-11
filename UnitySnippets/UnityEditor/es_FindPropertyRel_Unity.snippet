@@ -5,40 +5,41 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>getComponentInChildren_Unity</Title>
+      <Title>es_FindPropertyRel_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>getcompchild</Shortcut>
+      <Shortcut>esfindrel</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>objectComponent</ID>
-          <ToolTip>objectComponent</ToolTip>
-          <Default>objectComponent</Default>
+          <ID>field</ID>
+          <ToolTip>field</ToolTip>
+          <Default>field</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>this</ID>
-          <ToolTip>this</ToolTip>
-          <Default>this</Default>
+          <ID>relativeProperty</ID>
+          <ToolTip>relativeProperty</ToolTip>
+          <Default>relativeProperty</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>componentType</ID>
-          <ToolTip>componentType</ToolTip>
-          <Default>componentType</Default>
+          <ID>serializedProperty</ID>
+          <ToolTip>serializedProperty</ToolTip>
+          <Default>serializedProperty</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[$objectComponent$ = $this$.GetComponentInChildren<$componentType$>();$end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$relativeProperty$ = $serializedProperty$.FindPropertyRelative("$field$"));
+$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -5,40 +5,48 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>getComponentInChildren_Unity</Title>
+      <Title>nullVerify_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>getcompchild</Shortcut>
+      <Shortcut>nullverify</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>objectComponent</ID>
-          <ToolTip>objectComponent</ToolTip>
-          <Default>objectComponent</Default>
+          <ID>object</ID>
+          <ToolTip>object</ToolTip>
+          <Default>object</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>this</ID>
-          <ToolTip>this</ToolTip>
-          <Default>this</Default>
+          <ID>null</ID>
+          <ToolTip>null</ToolTip>
+          <Default>null</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>componentType</ID>
-          <ToolTip>componentType</ToolTip>
-          <Default>componentType</Default>
+          <ID>property</ID>
+          <ToolTip>property</ToolTip>
+          <Default>property</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>value</ID>
+          <ToolTip>value</ToolTip>
+          <Default>value</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[$objectComponent$ = $this$.GetComponentInChildren<$componentType$>();$end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[if($object$!=null)
+    $object$.$property$=$value$;$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -5,40 +5,40 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>findPropertyRelative_Unity</Title>
+      <Title>es_GeneralField_OSG_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>efindproprel</Shortcut>
+      <Shortcut>esfield</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>relativeProperty</ID>
-          <ToolTip>relativeProperty</ToolTip>
-          <Default>relativeProperty</Default>
+          <ID>Label</ID>
+          <ToolTip>Label</ToolTip>
+          <Default>Label</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>property</ID>
-          <ToolTip>property</ToolTip>
-          <Default>property</Default>
+          <ID>SerializedProperty</ID>
+          <ToolTip>SerializedProperty</ToolTip>
+          <Default>SerializedProperty</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>variable</ID>
-          <ToolTip>variable</ToolTip>
-          <Default>variable</Default>
+          <ID>IntField</ID>
+          <ToolTip>IntField</ToolTip>
+          <Default>IntField</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[SerializedProperty $relativeProperty$ = $property$.FindPropertyRelative("$variable$");
+      <Code Language="csharp" Delimiter="$"><![CDATA[EditorSerialized.$IntField$("$Label$: ", $SerializedProperty$);
 $end$]]></Code>
     </Snippet>
   </CodeSnippet>

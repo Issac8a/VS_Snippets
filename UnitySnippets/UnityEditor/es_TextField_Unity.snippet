@@ -5,21 +5,21 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>findProperty_Unity</Title>
+      <Title>es_TextField_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>efindprop</Shortcut>
+      <Shortcut>estextfield</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>variableName</ID>
-          <ToolTip>variableName</ToolTip>
-          <Default>variableName</Default>
+          <ID>Text</ID>
+          <ToolTip>Text</ToolTip>
+          <Default>Text</Default>
           <Function>
           </Function>
         </Literal>
@@ -31,8 +31,7 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[$serializedProperty$ = serializedObject.FindProperty("$variableName$");
-$end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[EditorSerialized.TextField("$Text$:", $serializedProperty$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

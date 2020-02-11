@@ -5,48 +5,48 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>debug2_Unity</Title>
+      <Title>es_FindProperty_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>debuglog2</Shortcut>
+      <Shortcut>esfindpropwname</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>debugText</ID>
-          <ToolTip>debugText</ToolTip>
-          <Default>debugText</Default>
+          <ID>_serializedProperty</ID>
+          <ToolTip>_serializedProperty</ToolTip>
+          <Default>_serializedProperty</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>variable</ID>
-          <ToolTip>variable</ToolTip>
-          <Default>variable</Default>
+          <ID>serializedObject</ID>
+          <ToolTip>serializedObject</ToolTip>
+          <Default>serializedObject</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>debugText2</ID>
-          <ToolTip>debugText2</ToolTip>
-          <Default>debugText2</Default>
+          <ID>scriptRef</ID>
+          <ToolTip>scriptRef</ToolTip>
+          <Default>scriptRef</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>variable2</ID>
-          <ToolTip>variable2</ToolTip>
-          <Default>variable2</Default>
+          <ID>m_variable</ID>
+          <ToolTip>m_variable</ToolTip>
+          <Default>m_variable</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[Debug.Log("$debugText$: " + $variable$ +", $debugText2$: " + $variable2$);$end$
-]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$_serializedProperty$ = $serializedObject$.FindProperty(nameof($scriptRef$.$m_variable$));
+$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

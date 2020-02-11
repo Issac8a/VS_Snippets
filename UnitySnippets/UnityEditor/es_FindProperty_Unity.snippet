@@ -5,33 +5,40 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>propertyField1_Unity</Title>
+      <Title>es_FindProperty_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>epropfield1</Shortcut>
+      <Shortcut>esfindprop</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>property</ID>
-          <ToolTip>property</ToolTip>
-          <Default>property</Default>
+          <ID>serializedProperty</ID>
+          <ToolTip>serializedProperty</ToolTip>
+          <Default>serializedProperty</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>true</ID>
-          <ToolTip>true</ToolTip>
-          <Default>true</Default>
+          <ID>serializedObject</ID>
+          <ToolTip>serializedObject</ToolTip>
+          <Default>serializedObject</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>field</ID>
+          <ToolTip>field</ToolTip>
+          <Default>field</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[EditorGUILayout.PropertyField($property$,$true$);
+      <Code Language="csharp" Delimiter="$"><![CDATA[$serializedProperty$ = $serializedObject$.FindProperty("$field$");
 $end$]]></Code>
     </Snippet>
   </CodeSnippet>

@@ -5,33 +5,26 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>debug_Unity</Title>
+      <Title>invokeEvent</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>debuglog</Shortcut>
+      <Shortcut>invokeevent</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>debugText</ID>
-          <ToolTip>debugText</ToolTip>
-          <Default>debugText</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>hola</ID>
-          <ToolTip>hola</ToolTip>
-          <Default>hola</Default>
+          <ID>OnInitEvent</ID>
+          <ToolTip>OnInitEvent</ToolTip>
+          <Default>OnInitEvent</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[Debug.Log("$debugText$");$end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[$OnInitEvent$?.Invoke();$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

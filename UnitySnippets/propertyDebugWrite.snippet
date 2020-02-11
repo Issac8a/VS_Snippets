@@ -5,21 +5,21 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>debug3_Unity</Title>
+      <Title>propertyDebugWrite</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>debuglog3</Shortcut>
+      <Shortcut>propdebug</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>debugText</ID>
-          <ToolTip>debugText</ToolTip>
-          <Default>debugText</Default>
+          <ID>int</ID>
+          <ToolTip>int</ToolTip>
+          <Default>int</Default>
           <Function>
           </Function>
         </Literal>
@@ -31,35 +31,44 @@
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>debugText2</ID>
-          <ToolTip>debugText2</ToolTip>
-          <Default>debugText2</Default>
+          <ID>default</ID>
+          <ToolTip>default</ToolTip>
+          <Default>default</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>variable2</ID>
-          <ToolTip>variable2</ToolTip>
-          <Default>variable2</Default>
+          <ID>private</ID>
+          <ToolTip>private</ToolTip>
+          <Default>private</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>debugText3</ID>
-          <ToolTip>debugText3</ToolTip>
-          <Default>debugText3</Default>
+          <ID>property</ID>
+          <ToolTip>property</ToolTip>
+          <Default>property</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>variable3</ID>
-          <ToolTip>variable3</ToolTip>
-          <Default>variable3</Default>
+          <ID>Overwrite</ID>
+          <ToolTip>Overwrite</ToolTip>
+          <Default>Overwrite</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[Debug.Log("$debugText$: " + $variable$ +", $debugText2$: " + $variable2$ + ", $debugText3$: " + $variable3$);$end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[    [SerializeField] $private$ $int$ $variable$=$default$;
+    public $int$ $property$
+    {
+        get { return $variable$; }
+        set
+        {
+            Debug.Log("$Overwrite$: " + value);
+            $variable$ = value;
+        }
+    }$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

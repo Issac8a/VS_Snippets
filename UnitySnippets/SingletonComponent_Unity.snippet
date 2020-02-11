@@ -5,33 +5,35 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>debug_Unity</Title>
+      <Title>SingletonComponent_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>debuglog</Shortcut>
+      <Shortcut>singletcomp</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>debugText</ID>
-          <ToolTip>debugText</ToolTip>
-          <Default>debugText</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>hola</ID>
-          <ToolTip>hola</ToolTip>
-          <Default>hola</Default>
+          <ID>Class</ID>
+          <ToolTip>Class</ToolTip>
+          <Default>Class</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[Debug.Log("$debugText$");$end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[SingletonAsComponent<$Class$>
+{
+    #region SINGLETON
+    public static $Class$ Instance
+    {
+        get { return ($Class$)_Instance; }
+        set { _Instance = value; }
+    }
+    #endregion
+}$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -5,21 +5,26 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>getPropertyHeight_Unity</Title>
+      <Title>es_PropertyField_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>egetpropheight</Shortcut>
+      <Shortcut>epropfield</Shortcut>
     </Header>
     <Snippet>
-      <Code Language="csharp" Delimiter="$"><![CDATA[    public override float GetPropertyHeight(SerializedProperty property,
-                                            GUIContent label)
-    {
-        return EditorGUI.GetPropertyHeight(property, label, true);
-    }]]></Code>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>property</ID>
+          <ToolTip>property</ToolTip>
+          <Default>property</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[EditorGUILayout.PropertyField($property$);]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

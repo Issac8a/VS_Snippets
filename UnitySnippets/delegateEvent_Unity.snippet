@@ -5,40 +5,34 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>getComponentInChildren_Unity</Title>
+      <Title>delegateEvent_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>getcompchild</Shortcut>
+      <Shortcut>delevent</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>objectComponent</ID>
-          <ToolTip>objectComponent</ToolTip>
-          <Default>objectComponent</Default>
+          <ID>OnEvent</ID>
+          <ToolTip>OnEvent</ToolTip>
+          <Default>OnEvent</Default>
           <Function>
           </Function>
         </Literal>
         <Literal Editable="true">
-          <ID>this</ID>
-          <ToolTip>this</ToolTip>
-          <Default>this</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>componentType</ID>
-          <ToolTip>componentType</ToolTip>
-          <Default>componentType</Default>
+          <ID>OnEventType</ID>
+          <ToolTip>OnEventType</ToolTip>
+          <Default>OnEventType</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[$objectComponent$ = $this$.GetComponentInChildren<$componentType$>();$end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[    public delegate void $OnEventType$();
+    public event $OnEventType$ $OnEvent$;$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

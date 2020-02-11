@@ -5,26 +5,33 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>propertyField_Unity</Title>
+      <Title>stringConcat2</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>epropfield</Shortcut>
+      <Shortcut>concat2</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>property</ID>
-          <ToolTip>property</ToolTip>
-          <Default>property</Default>
+          <ID>string1</ID>
+          <ToolTip>string1</ToolTip>
+          <Default>string1</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>string2</ID>
+          <ToolTip>string2</ToolTip>
+          <Default>string2</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[EditorGUILayout.PropertyField($property$);]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[string.Concat("$string1$",  "$string2$")$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

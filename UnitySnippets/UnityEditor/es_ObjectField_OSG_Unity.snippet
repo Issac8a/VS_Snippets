@@ -5,36 +5,33 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>SingletonComponent_Unity</Title>
+      <Title>es_ObjectField_OSG_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>singletcomp</Shortcut>
+      <Shortcut>esobjfield</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>Class</ID>
-          <ToolTip>Class</ToolTip>
-          <Default>Class</Default>
+          <ID>Label</ID>
+          <ToolTip>Label</ToolTip>
+          <Default>Label</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>_serializedProperty</ID>
+          <ToolTip>_serializedProperty</ToolTip>
+          <Default>_serializedProperty</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[SingletonAsComponent<$Class$>
-{
-    #region SINGLETON
-    public static $Class$ Instance
-    {
-        get { return ($Class$)_Instance; }
-        set { _Instance = value; }
-    }
-    #endregion
-
-    $end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[EditorSerialized.ObjectField("$Label$: ", $_serializedProperty$);$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

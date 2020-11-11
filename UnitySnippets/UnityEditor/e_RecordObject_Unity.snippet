@@ -5,36 +5,33 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>SingletonComponent_Unity</Title>
+      <Title>e_RecordObject_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>singletcomp</Shortcut>
+      <Shortcut>erecordobject</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>Class</ID>
-          <ToolTip>Class</ToolTip>
-          <Default>Class</Default>
+          <ID>object</ID>
+          <ToolTip>object</ToolTip>
+          <Default>object</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>RecordText</ID>
+          <ToolTip>RecordText</ToolTip>
+          <Default>RecordText</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[SingletonAsComponent<$Class$>
-{
-    #region SINGLETON
-    public static $Class$ Instance
-    {
-        get { return ($Class$)_Instance; }
-        set { _Instance = value; }
-    }
-    #endregion
-
-    $end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[Undo.RecordObject($object$, "$RecordText$");$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>es_PropertyDrawerFull_OSG_Unity</Title>
+      <Author>
+      </Author>
+      <Description>Property drawer full template.</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>propdrawerfull</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>MainScript</ID>
+          <ToolTip>MainScript</ToolTip>
+          <Default>MainScript</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ScriptDrawer</ID>
+          <ToolTip>ScriptDrawer</ToolTip>
+          <Default>ScriptDrawer</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>_SerializedProperty</ID>
+          <ToolTip>_SerializedProperty</ToolTip>
+          <Default>_SerializedProperty</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>m_variable</ID>
+          <ToolTip>m_variable</ToolTip>
+          <Default>m_variable</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[using UnityEngine;
+using UnityEditor;
+using OSGEditor;
+
+[CustomPropertyDrawer(typeof($MainScript$))]
+public class $ScriptDrawer$ : PropertyDrawer
+{
+    SerializedProperty $_SerializedProperty$;
+
+    public override float GetPropertyHeight(SerializedProperty property,
+                                        GUIContent label)
+    {
+        return base.GetPropertyHeight(property, label);
+    }
+    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    {
+        EditorGUI.BeginProperty(position, label, property);
+        position = EditorGUI.PrefixLabel(position, GUIUtility.GetControlID(FocusType.Passive), label);
+        int indent = EditorGUI.indentLevel;
+        EditorGUI.indentLevel = 0;
+        FindProperties(property);
+        EditorGUILayout.PropertyField($_SerializedProperty$, true);
+        EditorGUI.indentLevel = indent;
+        EditorGUI.EndProperty();
+    }
+    private void FindProperties(SerializedProperty _property)
+    {
+        $_SerializedProperty$ = _property.FindPropertyRelative("$m_variable$");
+
+
+    }
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

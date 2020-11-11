@@ -5,36 +5,33 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>SingletonComponent_Unity</Title>
+      <Title>privateField_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>singletcomp</Shortcut>
+      <Shortcut>privfield</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>Class</ID>
-          <ToolTip>Class</ToolTip>
-          <Default>Class</Default>
+          <ID>int</ID>
+          <ToolTip>int</ToolTip>
+          <Default>int</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>field</ID>
+          <ToolTip>field</ToolTip>
+          <Default>field</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[SingletonAsComponent<$Class$>
-{
-    #region SINGLETON
-    public static $Class$ Instance
-    {
-        get { return ($Class$)_Instance; }
-        set { _Instance = value; }
-    }
-    #endregion
-
-    $end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[[SerializeField] private $int$ m_$field$;$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

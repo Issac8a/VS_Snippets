@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>es_PropertyDrawer_Unity</Title>
+      <Author>
+      </Author>
+      <Description>Creates a basic property drawer template.</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>propdrawer</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>ScriptForDrawer</ID>
+          <ToolTip>Script for drawer, this is the script that will be modified by the property drawer.</ToolTip>
+          <Default>ScriptForDrawer</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>ScriptDrawer</ID>
+          <ToolTip>The property drawer, whatever is in here will be drawed instead of the standard drawing.</ToolTip>
+          <Default>ScriptDrawer</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[[CustomPropertyDrawer(typeof($ScriptForDrawer$))]
+public class $ScriptDrawer$ : PropertyDrawer
+{
+    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    {
+        EditorGUI.PropertyField(position, property, label, true);
+    }
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

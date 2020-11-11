@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>UnityEvent1_Unity</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>unievent1</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>OnSomething</ID>
+          <ToolTip>OnSomething</ToolTip>
+          <Default>OnSomething</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>int</ID>
+          <ToolTip>int</ToolTip>
+          <Default>int</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>OnSomethingEvent</ID>
+          <ToolTip>OnSomethingEvent</ToolTip>
+          <Default>OnSomethingEvent</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[[System.Serializable]
+public class $OnSomething$ : UnityEngine.Events.UnityEvent<$int$>
+{
+}
+public $OnSomething$ $OnSomethingEvent$;
+$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

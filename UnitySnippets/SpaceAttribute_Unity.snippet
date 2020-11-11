@@ -5,36 +5,26 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>SingletonComponent_Unity</Title>
+      <Title>SpaceAttribute_Unity</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>singletcomp</Shortcut>
+      <Shortcut>spaceatt</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>Class</ID>
-          <ToolTip>Class</ToolTip>
-          <Default>Class</Default>
+          <ID>0</ID>
+          <ToolTip>0</ToolTip>
+          <Default>0</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[SingletonAsComponent<$Class$>
-{
-    #region SINGLETON
-    public static $Class$ Instance
-    {
-        get { return ($Class$)_Instance; }
-        set { _Instance = value; }
-    }
-    #endregion
-
-    $end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[[Space(order = $0$)]$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

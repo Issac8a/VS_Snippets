@@ -8,8 +8,7 @@
       <Title>debug3_Unity</Title>
       <Author>
       </Author>
-      <Description>
-      </Description>
+      <Description>Debug for 3 variables and texts</Description>
       <HelpUrl>
       </HelpUrl>
       <Shortcut>debuglog3</Shortcut>
@@ -18,7 +17,7 @@
       <Declarations>
         <Literal Editable="true">
           <ID>debugText</ID>
-          <ToolTip>debugText</ToolTip>
+          <ToolTip>debugText33</ToolTip>
           <Default>debugText</Default>
           <Function>
           </Function>
@@ -59,7 +58,7 @@
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[Debug.Log("$debugText$: " + $variable$ +", $debugText2$: " + $variable2$ + ", $debugText3$: " + $variable3$);$end$]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[Debug.Log(string.Concat("$debugText$: ", $variable$,", $debugText2$: ", $variable2$, ", $debugText3$: ", $variable3$));$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>PropGetFull</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>propgetfull</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>variable</ID>
+          <ToolTip>variable</ToolTip>
+          <Default>variable</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>int</ID>
+          <ToolTip>int</ToolTip>
+          <Default>int</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>0</ID>
+          <ToolTip>0</ToolTip>
+          <Default>0</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[    private $int$ m_$variable$ = $0$;
+    public $int$ M_$variable$
+    {
+        get
+        {
+            return m_$variable$;
+        }
+    }$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

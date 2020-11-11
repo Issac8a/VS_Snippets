@@ -5,36 +5,39 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>SingletonComponent_Unity</Title>
+      <Title>PropGet</Title>
       <Author>
       </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>singletcomp</Shortcut>
+      <Shortcut>propget</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>Class</ID>
-          <ToolTip>Class</ToolTip>
-          <Default>Class</Default>
+          <ID>int</ID>
+          <ToolTip>int</ToolTip>
+          <Default>int</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>variable</ID>
+          <ToolTip>variable</ToolTip>
+          <Default>variable</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[SingletonAsComponent<$Class$>
-{
-    #region SINGLETON
-    public static $Class$ Instance
+      <Code Language="csharp" Delimiter="$"><![CDATA[    public $int$ M_$variable$
     {
-        get { return ($Class$)_Instance; }
-        set { _Instance = value; }
-    }
-    #endregion
-
-    $end$]]></Code>
+        get
+        {
+            return m_$variable$;
+        }
+    }$end$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

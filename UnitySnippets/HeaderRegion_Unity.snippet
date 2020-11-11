@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>HeaderRegion_Unity</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>#headerregion</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>0</ID>
+          <ToolTip>0</ToolTip>
+          <Default>0</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>1</ID>
+          <ToolTip>1</ToolTip>
+          <Default>1</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>HeaderText</ID>
+          <ToolTip>HeaderText</ToolTip>
+          <Default>HeaderText</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[	#region $HeaderText$
+	[Header("$HeaderText$", order = $0$)]
+	[Space(order = $1$)]
+    $end$
+	#endregion]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>AssetMenu_Unity</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>assetmenu</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>FileName</ID>
+          <ToolTip>FileName</ToolTip>
+          <Default>FileName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Category</ID>
+          <ToolTip>Category</ToolTip>
+          <Default>Category</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Item</ID>
+          <ToolTip>Item</ToolTip>
+          <Default>Item</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>0</ID>
+          <ToolTip>0</ToolTip>
+          <Default>0</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[[CreateAssetMenu(fileName = "$FileName$_", menuName = "OSG/$Category$/$Item$", order = $0$)]$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
